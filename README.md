@@ -25,7 +25,19 @@ def searched_images(params):
 Main function takes input as params which is a dictionary containing directory of images, Search query and No of top images relevant to query
 Input Format-
 ```python
-params = {"directory": <path of directory of images,
+params = {"directory": <path of directory of images>,
               "search_query": <query to be searched> # for ex - "Children playing footall",
-              "N_images": <No of top images which are relevant to the query>}
+              "N_images": <number of top images which are relevant to the query> # integer}
+```
+Sample Input format-
+```python
+    params = {"directory": "natural-language-joint-query-search\images",
+              "search_query": "Children playing football",
+              "N_images": 3}
+```
+
+Sample Output format-
+Output contains a list of dictionaries shown below
+```python
+[{'Photo_id': 'child-613199_1280.jpg', 'position': 1, 'score': 0.28278786}, {'Photo_id': 'children-1822704_1920.jpg', 'position': 2, 'score': 0.24237464}, {'Photo_id': 'water-863053_1920.jpg', 'position': 3, 'score': 0.21144849}]
 ```
