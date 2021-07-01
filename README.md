@@ -2,7 +2,7 @@
 This project is based on image search based on text. For a given text (query), the main function will return top n images relevant to the query.
 
 Main Function-
-'''python
+```python
 
 def searched_images(params):
     image_features, image_attributes = get_image_features(params.get("directory"))
@@ -21,4 +21,4 @@ def searched_images(params):
         cv2.waitKey(0)
     return list_res
     
-'''
+```
