@@ -22,7 +22,7 @@ def searched_images(params):
     return list_res
     
 ```
-Main function takes input as params which is a dictionary containing directory of images, Search query and No of top images relevant to query
+Main function takes input as params which is a dictionary containing directory of images, Search query and No of top images we want to search.
 Input Format-
 ```python
 params = {"directory": <path of directory of images>,
