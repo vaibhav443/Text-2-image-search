@@ -12,14 +12,11 @@ def searched_images(params):
     for i in range(len(best_photo_ids)):
         dict_ = {"Photo_id": best_photo_ids[i], "position": i + 1, "score": similarity[i]}
         list_res.append(dict_)
-
     for i in best_photo_ids:
         img = cv2.imread(
             os.path.join(params.get("directory"), i))
         resized_image = cv2.resize(img, (1000, 700))
         cv2.imshow("sample1", resized_image)
         cv2.waitKey(0)
-
     return list_res
-
 '''
