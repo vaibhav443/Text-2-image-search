@@ -3,6 +3,7 @@ This project is based on image search based on text. For a given text (query), t
 
 Main Function-
 '''python
+
 def searched_images(params):
     image_features, image_attributes = get_image_features(params.get("directory"))
     text_features = encode_search_query(params.get("search_query"))
@@ -19,4 +20,5 @@ def searched_images(params):
         cv2.imshow("sample1", resized_image)
         cv2.waitKey(0)
     return list_res
+    
 '''
