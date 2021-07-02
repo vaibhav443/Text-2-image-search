@@ -37,7 +37,7 @@ Sample Input format-
 ```
 
 Sample Output format-
-Output contains a list of dictionaries shown below
+Output contains a list of dictionaries containing photo ids,position and cosine similarity socre as shown below
 ```python
 [{'Photo_id': 'child-613199_1280.jpg', 'position': 1, 'score': 0.28278786}, {'Photo_id': 'children-1822704_1920.jpg', 'position': 2, 'score': 0.24237464}, {'Photo_id': 'water-863053_1920.jpg', 'position': 3, 'score': 0.21144849}]
 ```
